@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      /* Styles for the header */
+      #header {
+        background-image: url("https://www.usnews.com/cmsmedia/01/c81065d1abe0c4fa8bddf398564024/CA_Santa_Barbara_superhero_image.jpg");
+        background-size: cover;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        font-size: 36px;
+        opacity: .8;
+        transition: opacity 0.3s ease-in-out;
+
+      }
+      #header.hover {
+        transform: rotate(10deg);
+      }
+      
+      /* Styles for the links section */
+      #links-section {
+        display: flex;
+        justify-content: center;
+        background-color: #000000;
+        padding: 20px;
+      }
+      .links-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        margin: 10px 95px;
+      }
+      .links-button:hover {
+        background-color: lightblue;
+        opacity: 0.8;
+  transform: rotate(10deg);
+  transition: transform 0.3s ease-in-out;
+      }
+      body {
+  background: linear-gradient(45deg, navy, blue, #23a6d5, lightblue);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+      
+      /* Styles for the login/signup button */
+      #login-signup-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px;
+      }
+      #login-signup-button button {
+        background-color: white;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+      }
+      #login-signup-button button:hover {
+        background-color: rgb(3, 3, 69);
+        color: white;
+        transform: rotate(10deg);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+   
+      .logo-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
+
+.logo-image:hover {
+  opacity: 0.8;
+  transform: rotate(10deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 250px;
+  height: 450px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50px;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.left-box {
+  margin-right: 200px;
+  height: 500px;
+}
+
+.right-box {
+  border-radius: 0 50px 50px 0;
+  margin-left: 200px;
+}
+
+.middle-box {
+  width: 420px;
+  height: 275px;
+  margin: 0 10px;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .box {
+    margin: 10px 0;
+  }
+  
+  .right-box {
+    margin-left: 0;
+    margin-top: 10px;
+    
+  }
+}
+.signup-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1420px;
+}
+
+
+
+
+
+  </style>
+  </head>
+  <header>
+    <div id="header">
+      <h1></h1>
+    </div>
+    <div id="links-section">
+      <a href="standings.html">
+        <button class="links-button">Standings</button>
+      </a>
+      <a href="rules.html">
+        <button class="links-button">Rules</button>
+      </a>
+      <a href="https://www.example.com">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/076/592/small/hacker-mascot-for-sports-and-esports-logo-free-vector.jpg" width="50" height="50" alt="Logo" class="logo-image">
+      </a>
+      <button class="links-button">Team Sign Ups</button>
+      <a href="schedule.html">
+        <button class="links-button">Schedule</button>
+      </a>
+    </div>
+    <button class="signup-btn">Sign Up</button>
+    
+    </div>
+  </header>
+  
+  
+  <body>
+    
+    <div class="container">
+      <div class="box left-box"><p>Hello We are a gaming league based out of SB. We are all SBCC students hoping to spread the video games to the community.</p></div>
+      
+      <div class="box middle-box"><iframe width="420" height="300" src="https://www.youtube.com/embed/o3sejGrJGbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      
+      <div class="box right-box"><iframe src="https://discord.com/widget?id=1088658732864524288&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        
+      </div>
+
+
+      
+      
+     
+    
+
+
+
+
+  </body>
+</html>
