@@ -5,7 +5,7 @@
     <style>
       /* Styles for the header */
       #header {
-        background-image: url("https://www.usnews.com/cmsmedia/01/c81065d1abe0c4fa8bddf398564024/CA_Santa_Barbara_superhero_image.jpg");
+        background-image: url("https://content.civicplus.com/api/assets/fb28ab2e-fa0a-49d2-8f9c-ba33ea9d0d72");
         background-size: cover;
         height: 200px;
         display: flex;
@@ -49,7 +49,7 @@
   transition: transform 0.3s ease-in-out;
       }
       body {
-  background: linear-gradient(45deg, navy, blue, #23a6d5, lightblue);
+  background: linear-gradient(45deg, rgb(1, 1, 47), darkblue,navy, blue, #23a6d5, lightblue);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -148,6 +148,7 @@
   height: 275px;
   margin: 0 10px;
   border-radius: 50px;
+  margin-right: 29px;
 }
 
 @media (max-width: 768px) {
@@ -169,12 +170,43 @@
 .signup-btn {
   background-color: black;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  margin-left: 1420px;
+  margin-left: 1430px;
+  animation: wiggle 3s linear infinite;
+  
 }
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+
+
+
+
 
 
 
@@ -201,9 +233,9 @@
         <button class="links-button">Schedule</button>
       </a>
     </div>
-    <button class="signup-btn">Sign Up</button>
+    <button class="signup-btn"><a href="signup.html"></a>Sign Up</button>
     
-    </div>
+    
   </header>
   
   
@@ -212,20 +244,25 @@
     <div class="container">
       <div class="box left-box"><p>Hello We are a gaming league based out of SB. We are all SBCC students hoping to spread the video games to the community.</p></div>
       
-      <div class="box middle-box"><iframe width="420" height="300" src="https://www.youtube.com/embed/o3sejGrJGbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <div class="box middle-box"><iframe width="475" height="350" src="https://www.youtube.com/embed/o3sejGrJGbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
       
       <div class="box right-box"><iframe src="https://discord.com/widget?id=1088658732864524288&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         
       </div>
 
-
-      
       
      
     
+      
+      
+    
 
-
-
+     
 
   </body>
-</html>
+
+  
+  
+
+</html> 
+
