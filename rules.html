@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Page Title</title>
+	<title>Rules</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<Style>
+    body{
+        background-color: black;
+    }
+ .slide-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slide-in 1s ease-out forwards;
+  color: orange;
+  margin: 70px;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 2;
+    transform: translateY(0);
+  }
+}
+
+
+</Style>
 <body>
-	<p>Valorant rules:
+	<p class="slide-in">Valorant rules:
 
         Time/Postment
         
@@ -45,7 +70,7 @@
         To report a player for breaking this conduct, please send a screenshot of the offending behaviour to a tournament administrator.
         Same rules apply for playoff.
         </p>
-    <p>Overwatch 2 rules:
+    <p class="slide-in">Overwatch 2 rules:
 
 
         Game time
@@ -68,7 +93,7 @@
         All general rules MUST be followed
         </p>
     
-        <p>Rules and Conduct for Santa Barbara gaming League
+        <p class="slide-in">Rules and Conduct for Santa Barbara gaming League
             Eligibility: The gaming league is open to all players who meet the age requirement of 13+
             Game Title: The game title(s) to be played in the league will be Valorant, and Overwatch
             Team Formation: Players can form teams of 8 or join an existing team. Each team must have a unique team name.

@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      /* Styles for the header */
+      #header {
+        background-image: url("https://content.civicplus.com/api/assets/fb28ab2e-fa0a-49d2-8f9c-ba33ea9d0d72");
+        background-size: cover;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        font-size: 36px;
+        opacity: .8;
+        transition: opacity 0.3s ease-in-out;
+        background-color: white;
+
+      }
+      #header.hover {
+        transform: rotate(10deg);
+      }
+      
+      /* Styles for the links section */
+      #links-section {
+        display: flex;
+        justify-content: center;
+        background-color: #000000;
+        padding: 20px;
+      }
+      .links-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        margin: 10px 95px;
+      }
+      .links-button:hover {
+        background-color: skyblue;
+        opacity: 0.8;
+  transform: rotate(10deg);
+  transition: transform 0.3s ease-in-out;
+      }
+      body {
+  background: linear-gradient(45deg, rgb(1, 1, 47), darkblue,navy, blue, #23a6d5, lightblue);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+      
+      /* Styles for the login/signup button */
+      #login-signup-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px;
+      }
+      #login-signup-button button {
+        background-color: white;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+      }
+      #login-signup-button button:hover {
+        background-color: rgb(3, 3, 69);
+        color: white;
+        transform: rotate(10deg);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .video{
+        animation: slide-in 1s ease-in-out forwards;
+      }
+      @keyframes slide-in {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.video:hover {
+  transform: scale(1.1);
+}
+
+   
+      .logo-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
+
+.logo-image:hover {
+  opacity: 0.8;
+  transform: rotate(10deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+.box:hover {
+  transform: scale(1.1);
+  
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .box {
+    margin: 10px 0;
+  }
+  
+  
+}
+.signup-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1430px;
+  animation: wiggle 3s linear infinite;
+  
+}
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 300px;
+  height: 500px;
+  border: 1px solid black;
+  margin: 220px;
+  background-color: #000000;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+  
+
+
+
+
+.circles img{
+  display: flex;
+  justify-content: center;
+  margin: 0 25px;
+}
+
+  .circles {
+  display: flex; /* set display property to flex */
+  justify-content: center;
+   /* center the elements horizontally */
+}
+
+
+
+.circles img:hover {
+  background-color: navy;
+  transform: scale(1.3);
+ 
+}
+
+.rectangle {
+  width: 400px;
+  height: 50px;
+  background-color: black;
+  margin-left: 500px;
+  color: white;
+  cursor: pointer; 
+  animation-name: move;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-bottom: 80px;
+  
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+
+
+
+
+img{
+  width: 70px;
+  height: auto
+ 
+}
+
+#esports-container img.esports {
+  width: 350px;
+  height: auto;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  
+  
+  
+}
+
+
+.right-align {
+  float: right;
+  
+  margin-left: 400px;
+ }
+
+ .third-box {
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  color: white;
+  margin-right: 90px;
+  
+}
+.third-box:hover img {
+  transform: scale(1.1);
+}
+
+
+
+#esports-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 40px;
+  margin-bottom: 150px;
+  border-color:#ffffff;
+  }
+
+
+
+#esports-container img:first-child {
+  margin-right: 160px;
+}
+
+#esports-container img:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+  transform: scale(1.2);
+}
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+
+
+.small-box {
+  width: 230px;
+  height: 50px;
+  background-color: #333;
+  margin-right: 10px;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.small-box {
+  color: white;
+}
+.small-box:hover {
+  transform: scale(1.2);
+}
+
+.small-box:first-child {
+  margin-right: 10px; /* add margin only to the second box to separate it from the first one */
+}
+
+.small-box:last-child {
+  margin-left:10px;
+}
+
+footer {
+  position: relative; /* add this */
+  
+  bottom: 0;
+  width: 100%; 
+}
+.third-box:hover {
+  background-color: navy; /* Change to the desired hover color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+</style>
+
+
+
+  
+</head>
+  
+
+<header>
+    <div id="header">
+      <h1>SB Gaming League</h1>
+    </div>
+    <div id="links-section">
+      <a href="standings.html">
+        <button class="links-button">Standings</button>
+      </a>
+      <a href="rules.html">
+        <button class="links-button">Rules</button>
+      </a>
+      <a href="https://www.example.com">
+        <img src="https://media.discordapp.net/attachments/1091126597244956683/1091138716988350465/logo2-removebg-preview.png?width=692&height=562" width="50" height="50" alt="Logo" class="logo-image">
+      </a>
+       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoTLzRGADlMiexW0vAEkW1p9J5EzCIFM55gf28HCnOm-yQBA/viewform">
+       <button class="links-button">Team Sign Ups</button>
+      </a>
+      <a href="schedule.html">
+        <button class="links-button">Schedule</button>
+      </a>
+    </div>
+    <button class="signup-btn"><a href="signup.html"></a>Sign Up</button>
+    
+    
+  </header>
+  
+  
+  <body>
+    
+   
+      
+      
+      
+    <div class="container">
+      <div class="video"><iframe width="600" height="400" src="https://www.youtube.com/embed/o3sejGrJGbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+     
+</div>
+
+<div class="container">
+  <div class="box"><h2>Hello! We are all SBCC students hoping to spread the fun of video games to the community.</h2></div>
+  
+  <div class="box"><iframe src="https://discordapp.com/widget?id=1091125591694118942&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> </div>
+  
+</div>
+
+
+
+
+<div id="esports-container">
+  <img class="esports slide-in" src="https://dd20lazkioz9n.cloudfront.net/wp-content/uploads/2022/10/Copy-of-Copy-of-WP-News-story-template-66-1.jpg">
+  <div class="third-box slide-in">SBGL is commited to having a fair fun league for everybody. We welcome newcomers to the game. Of all ages</div>
+  <img class="esports right-align slide-in" src="https://cdn.iste.org/www-root/2022-02/esports_club_blog.png?VersionId=qGjeKWee26oMneM6l.6TAAQo6snPVc7.">
+</div>
+
+
+  
+
+
+
+
+<div class="rectangle"><h2>Follow us on are social media!</h2></div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+    
+  
+
+  
+      
+      
+        
+  </body>
+
+  <footer>
+    <div class="circles">
+
+
+
+
+      <a href="https://www.instagram.com/sbgamingleague/?utm_source=ig_embed&amp;utm_campaign=loading">
+        <span class="circles"> </span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png">
+          
+      
+        </a>
+      
+      <a href="https://www.tiktok.com/@sbgamingleague?is_from_webapp=1&sender_device=pc">
+      <span class="circle"></span>
+      <img src="https://cdn.iconscout.com/icon/free/png-256/tiktok-1865888-1581904.png?f=webp&w=256">
+      
+    </a>
+      
+      
+    
+      
+    
+    
+    
+      
+      <a href="https://discord.gg/Z2RmPENC">
+        <span class="circle"></span>
+        <img src="data:image/png;base64,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">
+      </a>
+    
+      
+      <a href="https://youtu.be/o3sejGrJGbQ" target="_blank">
+        <span class="circle">
+          <img src="https://cdn.iconscout.com/icon/free/png-256/youtube-1865882-1581898.png" alt="description-of-your-image">
+        </span>
+      </a>
+      
+       
+      <a href="https://www.twitch.tv/santabarbaragamingleague" target="twitch account">
+      <span class="circle">
+        <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/13750fd9eb41e11a67d2410d47d9e33a">
+       
+      </span>
+    </a>
+    
+      </div>
+    
+      <footer>
+        <div class="footer-container" onclick="window.location.href='https://forms.gle/Tv9VaNHh1GtkxRPL9'">
+          <div class="small-box">
+            <h2>Feedback</h2>
+          </div>
+          <div class="small-box" onclick="window.location.href='Merchstore.html'">
+            <h2>Merch Store</h2>
+          </div>
+        </div>
+      </footer>
+
+
+
+
